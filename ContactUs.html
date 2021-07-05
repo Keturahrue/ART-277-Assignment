@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1;">
+  <title></title>
+     
+     <script>
+     function validateForm()
+         {
+             var x=document.forms["myData"]
+             
+           ["tel"].value;
+             
+             if(x==null||x==""){
+                 alert("Numbers only \n Please enter phne number ")
+             return false;
+             
+                 }
+             
+         }
+         
+     
+     
+     </script>
+     
+  <style type="text/css" media="all">
+    /* Codes for the main*/
+      *{
+          box-sizing: border-box;
+      }
+      
+      body{
+          
+   
+      }
+      
+      
+      /* Codes for the lg*/ 
+      .lg{
+          position: relative;
+       float: left;
+ margin-top: 16px; 
+          width:;
+      }
+      
+      .lgr{
+          position:  relative;
+          margin-top: 16px;
+          
+      }
+      
+      
+      /* Codes for the Navigation*/
+   
+.frist-div{
+ background: black;
+width: 100%;
+ text-align: center;
+padding:10px;
+height:44px;
+ color: white;
+    border-bottom-color: gold;
+    border-top-color: gold;
+    
+
+}
+
+.links{
+ text-decoration: none;
+ color: white ;
+   text-shadow: 4px 4px 4px gold; 
+    font-family: lucida calligraphy;
+ padding:5px;
+}
+   
+.links:hover{
+ color:black;
+text-shadow: 3px  2px white; 
+ background-color: gold;
+  
+}
+   /* Profile Image*/
+      
+      
+      
+      /* Profile Table*/ 
+      table, th, td{
+          border: 1px solid black;
+          border-collapse: collapse;
+          text-align: center;
+          font-family:Arial;
+          padding: 8px;
+      }
+      
+      table{
+          width: 100%;
+          
+      }
+      
+      
+   
+   
+   
+   
+   
+   
+   /*Profile details codes*/
+   .contain-profile{
+   
+    width: 100%;
+    font-family: lucida calligraphy;
+   }
+   
+   .Menu{
+   
+    
+    padding: 10px;
+    
+   }
+      
+      /*the buttn*/
+      
+      button{
+          border-radius: 10px;
+          box-shadow:0  2px 2px red;
+          background-color: transparent;
+      }
+      
+      .myprofile{
+          border-radius: 60px;
+          box-shadow:0 0 2px   2px gold;
+          border-top:8px ridge black;
+          border-right:8px ridge gold;
+          border-left:8px ridge gold;
+          border-bottom:8px ridge black;
+          animation: animate 3s linear;
+          animation-name: animate;
+          animation-duration: 3s;
+          
+      }
+      
+      @keyframes animate{
+          from{
+              border-radius: 0px;
+          box-shadow:0 0 1px   2px gold;
+          border-top:2px ridge black;
+          border-right:2px ridge gold;
+          border-left:2px ridge gold;
+          border-bottom:2px ridge black;
+          width: 100px;
+          height: 100px;
+              
+          } 
+          
+          to{
+             border-radius: 60px;
+          box-shadow:0 0 2px   2px gold;
+          border-top:8px ridge black;
+          border-right:8px ridge gold;
+          border-left:8px ridge gold;
+          border-bottom:8px ridge black; 
+          }
+          
+      }
+      .menulinks{
+          
+          text-decoration: none;
+          padding: 5px;
+          font-size: 20px;
+          display: block;
+      }
+   
+   .AboutMe{
+    padding: 10px;
+  
+   }
+   
+   p{
+   font-family: comic sans ms;
+   }
+      
+      form{
+          border-radius: 30px;
+      }  
+      
+      textarea{
+          border-radius: 5px;
+      }
+      
+      input{
+          padding: 3px;
+          border-radius: 5px;
+          text-align: center;
+       
+      }  
+      
+  </style>
+  
+ </head>
+ <body style=" width:95%; margin:0 auto;">
+  
+  <!--Logo Section-->
+  <img class="lg" src="logo.png" alt="" width="50px;" height="50px"/>
+  
+   <img class="lgr" style="float:right" src="logo.png" alt="" width="50px;" height="50px"/>
+  
+  
+  <br /> 
+  
+   <!--Navigation Section-->
+     <div class="first-flex">
+  <div class="frist-div">
+  
+|<a class="links" href="Project.html">Home</a>|<a class="links" href="AboutUs.html">About</a>|<a class="links" href="ContactUs.html">Contact</a>|
+  </div> 
+  </div>
+     <br>
+     <br>
+     <br>
+     
+     <!--The Form  Section-->
+     <center>
+     <form style="background-color: gold; font-size: 20px; width: 18rem; padding: 10px;" action="" method="get" onsubmit="return validateForm()" name="myData">
+         
+         <h3>Please fill in every field </h3>
+     <label for="fname">Enter Name</label><br>
+         <input type="text" id="fname" placeholder="Enter Full Name" required><br><br>
+    <label for="email" >Email</label><br>
+         <input type="email" id="email" placeholder="example@gmail.com" required><br>
+         <br>
+         
+         <label for="tel" >Telephone</label><br>
+         <input type="tel" id="tel" placeholder="+231-775-241-463" required><br>
+         <br>
+         
+    <label for="message">Message</label><br>
+         <textarea id="message" style="position: relative;" placeholder="Please enter text Message here" required></textarea>
+         <br><br>
+    <button style="background-color: aliceblue; height: 30px; width: 70px; position: relative; top: -3.5px" type="reset">Reset</button> &nbsp;&nbsp;&nbsp;&nbsp;<button style="background-color: aliceblue;" type="submit"><a style="text-decoration: none;" href="mailto:paykaimichael56@gmail.com"> Submit<img src="send.jpeg" width="20px" height="20px"> </a></button> 
+     
+     </form>
+     </center>
+     
+     <br>
+     <br>
+   <!--flex Section-->
+ <div class="flex">
+     <div class="flex-items"></div>
+     
+     <div class="flex-items"></div>
+     <div class="flex-items"></div>
+     
+     
+     
+     
+     
+     
+     </div>
+  
+   <br><br>
+   <br>
+   <br>
+   
+   
+         
+
+      <div style="background-color: black; height: 30px; padding: 5px; text-align: center; color: white; font-family: lucida calligraphy; font-size: 13px;">
+   All Right Reserved &nbsp;  |&nbsp;  Copyright &copy;2021
+     </div>
+      <br>
+  
+     
+   
+ </body>
+</html>
